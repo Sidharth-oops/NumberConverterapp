@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:background="@drawable/backgrounddesign"
+
+    >
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="NUMBER CONVERTER"
+       android:textAllCaps="true"
+       android:textStyle="bold"
+       android:textSize="32sp"
+       android:textColor="@color/white"
+       android:gravity="center_horizontal"
+       android:layout_margin="20dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/number"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="APP LOGO"
+
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/etvdecimal"
+                    android:layout_marginBottom="16dp"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLength="10"
+                    android:background="@drawable/focusview"
+                    android:drawableLeft="@drawable/decimal_leftdrawable"
+                    style="@style/myEditTextStyle"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/copy_decimal"
+                    android:src="@drawable/ic_copy"
+                    android:layout_alignRight="@+id/etvdecimal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    />
+
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    style="@style/myEditTextStyle"
+                    android:id="@+id/etvBinary"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/view_design"
+                    android:digits="01"
+                    android:inputType="number"
+                    android:drawableLeft="@drawable/binary_left"/>
+                />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/copy_binary"
+                    android:src="@drawable/ic_copy"
+                    android:layout_alignRight="@+id/etvBinary"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    style="@style/myEditTextStyle"
+                    android:id="@+id/etvOctal"
+                    android:inputType="number"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/view_design"
+                    android:drawableLeft="@drawable/octal_left"
+                    android:digits="01234567"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/copy_Octal"
+                    android:src="@drawable/ic_copy"
+                    android:layout_alignRight="@+id/etvOctal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    />
+
+            </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            style="@style/myEditTextStyle"
+            android:id="@+id/etvHexa"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/view_design"
+            android:drawableLeft="@drawable/hexa_left"
+            android:inputType="number"
+            android:digits="0123456789abcdefABCDEF"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/copy_Hexa"
+            android:src="@drawable/ic_copy"
+            android:layout_alignRight="@+id/etvHexa"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+            <Button
+                style="@style/myEditTextStyle"
+                android:id="@+id/btnClear"
+                android:text="Clear"
+                android:textAllCaps="true"
+                android:background="@drawable/button_design"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

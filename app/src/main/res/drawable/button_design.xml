@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:state_pressed="false">
+      <shape android:shape="rectangle">
+         <stroke android:width="4dp"
+            android:color="@color/cardview_light_background"/>
+         <gradient android:angle="45"
+            android:startColor="@color/teal_200"
+            android:endColor="@color/purple_700"/>
+
+      <corners android:topRightRadius="120dp"
+         android:bottomLeftRadius="120dp"/>
+      </shape>
+
+   </item>
+   <item android:state_pressed="true">
+      <shape android:shape="rectangle">
+         <stroke android:width="4dp"
+             android:color="@color/cardview_light_background"/>
+         <gradient android:angle="45"
+             android:startColor="#3EDDD8"
+             android:endColor="#EBAD4F"/>
+
+         <corners android:topRightRadius="120dp"
+             android:bottomLeftRadius="120dp"/>
+      </shape>
+
+   </item>
+</selector>
